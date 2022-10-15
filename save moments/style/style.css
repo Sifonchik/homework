@@ -1,5 +1,6 @@
 body {
    font-family: 'Open Sans', sans-serif;
+   font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -38,7 +39,8 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-}
+}  
+
 
 .background-title {
    font-weight: 700;
@@ -64,6 +66,7 @@ body {
    background-color: #5C98AB;
    text-align: center;
    padding: 133px 0px;
+   margin-bottom: 202px;
 }
 
 .description-text {
@@ -72,9 +75,130 @@ body {
    color: #FFFFFF;
    max-width: 726px;
    margin: 0 auto;
-}   
+} 
+
+.rectangle {
+   position: relative;
+}
+
+.rectangle::before {
+   position: absolute;
+   content: "";
+   width: 178px;
+   height: 121px;
+   background-color: #BFDEFB;
+   left: -110px;
+   bottom: -250px;
+}
+
+.text-rectangle {
+   text-align: center;
+   max-width: 696px;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 42px;
+   margin: 0 auto;
+   margin-bottom: 202px;
+   position: relative;
+}
+
+.text-rectangle::before {
+   position: absolute;
+   content: "";
+   width: 178px;
+   height: 121px;
+   background-color: #BFDEFB;
+   top: -120px;
+   left: -400px;
+}
+
+.text-rectangle::after {
+   position: absolute;
+   content: "";
+   width: 178px;
+   height: 121px;
+   background-color: #BFDEFB;
+   top: 0px;
+   right: -400px;
+}
+
+.text-circle {
+   text-align: center;
+   max-width: 696px;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 42px;
+   margin: 0 auto;
+   margin-bottom: 137px;
+   position: relative;
+}
+
+.text-circle::before {
+   position: absolute;
+   content: "";
+   width: 58px;
+   height: 58px;
+   border-radius: 50%;
+   background-color: #5C98AB;
+   top: -60px;
+   left: -30px;
+}
+
+.text-circle::after {
+   position: absolute;
+   content: "";
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   background-color: #BFDEFB;
+   right: -150px;
+}
+
+.form-section {
+   text-align: center;
+}
    
+.input__wrapper {
+   position: relative;
+   margin-bottom: 52px;
+}
 
+.input {
+   width: 647px;
+   height: 96px;
+   padding: 14px 0 63px 33px;
+   border: 1px solid #000000;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
 
+.label {
+   position: absolute;
+   padding: 33px 0 14px 33px;
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 49px;
+}
 
+.input::placeholder {
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 19px;
+}
+
+.form-button {
+   width: 647px;
+   height: 92px;
+   background: #5C98AB;
+   border: none;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 49px;
+   text-align: center;
+   color: #FFFFFF;
+}
 
