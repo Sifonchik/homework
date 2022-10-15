@@ -1,6 +1,5 @@
 body {
    font-family: 'Open Sans', sans-serif;
-   font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -77,59 +76,51 @@ body {
    margin: 0 auto;
 } 
 
-.rectangle {
+.container__position {
    position: relative;
-}
-
-.rectangle::before {
-   position: absolute;
-   content: "";
-   width: 178px;
-   height: 121px;
-   background-color: #BFDEFB;
-   left: -110px;
-   bottom: -250px;
+   margin-bottom: 202px;
 }
 
 .text-rectangle {
    text-align: center;
    max-width: 696px;
    font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 400;
    font-size: 36px;
    line-height: 42px;
    margin: 0 auto;
-   margin-bottom: 202px;
-   position: relative;
 }
 
-.text-rectangle::before {
+.rectangle_1 {
    position: absolute;
-   content: "";
+   background-color: #BFDEFB;
    width: 178px;
    height: 121px;
-   background-color: #BFDEFB;
+   left: 0;
    top: -120px;
-   left: -400px;
 }
 
-.text-rectangle::after {
+.rectangle_2 {
    position: absolute;
-   content: "";
+   background-color: #BFDEFB;
    width: 178px;
    height: 121px;
+   left: 0;
+   top: 120px;
+}
+
+.rectangle_3 {
+   position: absolute;
    background-color: #BFDEFB;
-   top: 0px;
-   right: -400px;
+   width: 178px;
+   height: 121px;
+   right: 0;
+   top: 15px;
 }
 
 .text-circle {
    text-align: center;
    max-width: 696px;
    font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 400;
    font-size: 36px;
    line-height: 42px;
    margin: 0 auto;
@@ -170,7 +161,7 @@ body {
 .input {
    width: 647px;
    height: 96px;
-   padding: 14px 0 63px 33px;
+   padding: 33px 0 14px 33px;
    border: 1px solid #000000;
    border-radius: 4px;
    box-sizing: border-box;
@@ -178,16 +169,15 @@ body {
 
 .label {
    position: absolute;
-   padding: 33px 0 14px 33px;
-   font-weight: 400;
-   font-size: 36px;
-   line-height: 49px;
-}
-
-.input::placeholder {
+   padding: 14px 0 63px 33px;
    font-weight: 300;
    font-size: 14px;
    line-height: 19px;
+}
+
+.input::placeholder {
+   font-size: 36px;
+   line-height: 49px;
 }
 
 .form-button {
