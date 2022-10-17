@@ -165,6 +165,8 @@ body {
    border: 1px solid #000000;
    border-radius: 4px;
    box-sizing: border-box;
+   font-size: 36px;
+   line-height: 49px;
 }
 
 .label {
