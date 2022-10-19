@@ -109,7 +109,7 @@ body {
 /*ENGAGE_VISITORS*/
 
 .background_visitors {
-   background-color: #00A1C6;
+   background-color: rgb(0, 161, 198, 0.1);
    padding-bottom: 110px;
    margin-bottom: 62px;
 }
@@ -189,5 +189,30 @@ body {
    display: grid;
    grid-template-columns: repeat(4, 262px);
    justify-content: space-between;
+   text-align: center;
+}
+
+.item_image {
+   width: 262px;
+   height: 300px;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+   border-radius: 8px;
+   padding-top: 22px;
+   font-size: 22px;
+   font-weight: 700;
+   line-height: 28px;
+   color: #2B292D;
+   text-decoration: none;
+}
+
+.item_image:hover {
+   cursor: pointer;
+   transition: 1s;
+   background-color: #3141C5;
+   color: #FFFFFF;
+}
+
+.item_text {
+   padding-top:  22px;
 }
 
