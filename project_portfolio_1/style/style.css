@@ -78,21 +78,21 @@ body {
 
 /*QUESTION_SECTION*/
 
-.background_question {
+.question {
    background-color: #F4F5F7;
    padding: 76px 0 77px;
    margin-bottom: 29px;
 }
 
-.question_about_for:not(:last-of-type) {
+.question_about-for:not(:last-of-type) {
    margin-right: 29px;
 }
 
-.question_about_for {
+.question_block {
    max-width: 555px;
 }
 
-.question {
+.question_text {
    font-weight: 700;
    font-size: 22px;
    line-height: 32px;
@@ -106,9 +106,9 @@ body {
    color: #2B292D;
 }
 
-/*ENGAGE_VISITORS*/
+/*VISITORS*/
 
-.background_visitors {
+.visitors {
    background-color: rgb(0, 161, 198, 0.1);
    padding-bottom: 110px;
    margin-bottom: 62px;
@@ -120,7 +120,7 @@ body {
    margin-bottom: 111px;
 }
 
-.visitors_title_1 {
+.visitors_text_1 {
    font-size: 22px;
    font-weight: 700;
    line-height: 34px;
@@ -128,7 +128,7 @@ body {
    margin-bottom: 24px;
 }
 
-.visitors_title_2 {
+.visitors_text_2 {
    max-width: 555px;
    font-size: 56px;
    line-height: 56px;
@@ -139,7 +139,7 @@ body {
    margin-bottom: 30px;
 }
 
-.visitors_text {
+.visitors_text_3 {
    max-width: 555px;
    margin: 0 auto;
    font-size: 24px;
@@ -185,14 +185,14 @@ body {
    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #d4cbcb;
 }
 
-.grid_pictures {
+.grid_visitors_image {
    display: grid;
    grid-template-columns: repeat(4, 262px);
    justify-content: space-between;
    text-align: center;
 }
 
-.item_image {
+.visitors_image {
    width: 262px;
    height: 300px;
    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
@@ -205,20 +205,24 @@ body {
    text-decoration: none;
 }
 
-.item_image:hover {
+.visitors_image:hover {
    cursor: pointer;
    transition: 1s;
    background-color: #3141C5;
    color: #FFFFFF;
 }
 
-.item_text {
+.visitors_image_text {
    padding-top:  22px;
 }
 
 /*SURFACES*/
 
-.surface_title {
+.surface {
+   margin-bottom: 91px;
+}
+
+.surface_text {
    font-weight: 700;
    font-size: 56px;
    line-height: 66px;
@@ -233,20 +237,20 @@ body {
    color: #172342;
    max-width: 554px;
    margin: 0 auto;
-   text-align: center;
    margin-bottom: 97px;
+   text-align: center;
 }
 
-.grid_photos {
+.grid_surface_photos {
    display: grid;
    justify-content: space-between;
    grid-template-columns: repeat(3, 347px);
    grid-template-rows: repeat(3, 208px);
    gap: 42px;
-   margin-bottom: 91px;
-}
+   }
 
-.item_photo:nth-child(3),
-.item_photo:nth-child(4) {
+.surface_photo:nth-child(3),
+.surface_photo:nth-child(4) {
    grid-row: span 2;
 }
+
